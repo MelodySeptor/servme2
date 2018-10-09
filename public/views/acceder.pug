@@ -1,0 +1,27 @@
+doctype html
+html
+	head
+		include ./head.pug
+
+	body
+		include ./header.pug
+
+		article(class="webslides")
+			section(class="bg-black aligncenter slide current")
+				span(class="background dark" style="background-image:url('/images/login.jpg')")
+				div(class="wrap size-70 align center")
+					h2(class="text-landing") Acceder
+					p(class="text-intro") ¿Qué servicio necesitas hoy?
+					form(class="bg-trans-dark" method="post" action="/accederPeticion" style="border-radius:10px;")
+						ul(class="flexblock")
+							li
+								input(tabindex="1" name="email" placeholder="tu@email.com" required="required" type="text")
+
+							li
+								input(tabindex="2" name="password" placeholder="Contraseña" required="required" type="password")
+							li
+								button(class="radius" type="submit" tabindex="3" title="Acceder")
+									p Acceder
+					
+						a(href="/registro")
+							p(class="text-context") Crear nuevo usuario

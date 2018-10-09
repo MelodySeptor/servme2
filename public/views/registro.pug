@@ -1,0 +1,36 @@
+doctype html
+html
+	head
+		include ./head.pug
+
+	body
+		include ./header.pug
+
+		article(class="webslides")
+			section(class="bg-black aligncenter slide current")
+				span(class="background dark" style="background-image:url('/images/registro.jpg')")
+				div(class="wrap size-70 align center")
+					h2(class="text-landing") Registro
+					p(class="text-intro") Empieza a solicitar u ofrecer servicios
+					form(class="bg-trans-dark" method="post" action="/registroPeticion" style="border-radius:10px;")
+						ul(class="flexblock")
+							li
+								input(tabindex="1" name="email" placeholder="tu@email.com" required="required" type="text")
+
+						ul(class="flexblock")
+							li
+								input(tabindex="1" name="password" placeholder="Contraseña" required="required" type="password")
+							li
+								input(tabindex="2" name="passwordRepeat" placeholder="Repite la Contraseña" required="required" type="password")
+
+						ul(class="flexblock")
+							li
+								input(tableindex="1" type="radio" id="terminos" name="terminos"  value="Acepto los Términos y condiciones" required="required")
+								| Acepto los Términos y condiciones de uso.
+
+							li
+								button(class="radius" type="submit" tabindex="2" title="Acceder")
+									p Acceder
+
+						a(href="/acceder")
+							p(class="text-context") Ya estoy registrado

@@ -1,0 +1,20 @@
+doctype html
+html
+	head
+		include ./head.pug
+
+	body
+		
+		article(class="webslides")
+			section(class="bg-black aligncenter slide current")
+				span(class="background dark" style="background-image:url('/images/indexBackground.jpg')")
+				div(class="wrap")
+					
+					h1(class="text-landing")= nombrePrincipal
+					p(class="text-subtitle") Servicios de confianza en casa
+
+					br
+					div(class="wrap size-30 align center")
+						form(method="get" action="/inicio")
+							button(class="radius" type="submit" title="Acceder")
+								p Acceder
