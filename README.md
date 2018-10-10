@@ -15,6 +15,8 @@
   - Fotos provisionales correctas.
   - Estilo correcto.
   - Captcha mal redirije a registro otra vez.
+- Google Search Console (Hecho).
+  - Sitemap.xml
 - Añadir login mediante passportjs
 - Registrar usuario correctamente.
 - Logear usuario correctamente.
