@@ -2,6 +2,7 @@ doctype html
 html
 	head
 		include ./head.pug
+		script(src='https://www.google.com/recaptcha/api.js')
 
 	body
 		include ./header.pug
@@ -12,7 +13,7 @@ html
 				div(class="wrap size-70 align center")
 					h2(class="text-landing") Registro
 					p(class="text-intro") Empieza a solicitar u ofrecer servicios
-					form(class="bg-trans-dark" method="post" action="/registroPeticion" style="border-radius:10px;")
+					form(class="bg-trans-dark" method="post" onsubmit="validateCaptcha()" action="/registroPeticion" style="border-radius:10px;")
 						ul(class="flexblock")
 							li
 								input(tabindex="1" name="email" placeholder="tu@email.com" required="required" type="text")
@@ -29,8 +30,14 @@ html
 								| Acepto los Términos y condiciones de uso.
 
 							li
+								div(class="g-recaptcha" data-sitekey="6LdeWnQUAAAAAE9u1kVdkarxsXP8m298z43mycbZ")
+								
+						ul(class="flexblock")
+							li
 								button(class="radius" type="submit" tabindex="2" title="Acceder")
 									p Acceder
 
 						a(href="/acceder")
 							p(class="text-context") Ya estoy registrado
+					script
+						include ../scripts/validateCaptcha.js
