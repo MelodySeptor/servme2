@@ -14,6 +14,11 @@ html
 					h2(class="text-landing") Registro
 					p(class="text-intro") Empieza a solicitar u ofrecer servicios
 					form(class="bg-trans-dark" method="post" onsubmit="validateCaptcha()" action="/registroPeticion" style="border-radius:10px;")
+
+						ul(class="flexblock")
+							li
+								input(tabindex="1" name="nombres" placeholder="Nombre y Apellidos" required="required" type="text")
+
 						ul(class="flexblock")
 							li
 								input(tabindex="1" name="email" placeholder="tu@email.com" required="required" type="text")
@@ -28,6 +33,8 @@ html
 							li
 								input(tableindex="1" type="radio" id="terminos" name="terminos"  value="Acepto los Términos y condiciones" required="required")
 								| Acepto los Términos y condiciones de uso.
+								a(href="/terminos")
+									p(class="text-context") Leer más.
 
 							li
 								div(class="g-recaptcha" data-sitekey="6LdeWnQUAAAAAE9u1kVdkarxsXP8m298z43mycbZ")
@@ -35,7 +42,7 @@ html
 						ul(class="flexblock")
 							li
 								button(class="radius" type="submit" tabindex="2" title="Acceder")
-									p Acceder
+									p Registrame
 
 						a(href="/acceder")
 							p(class="text-context") Ya estoy registrado
