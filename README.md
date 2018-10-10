@@ -14,6 +14,7 @@
   - Campos necesarios.
   - Fotos provisionales correctas.
   - Estilo correcto.
+  - Captcha mal redirije a registro otra vez.
 - Añadir login mediante passportjs
 - Registrar usuario correctamente.
 - Logear usuario correctamente.
