@@ -6,7 +6,7 @@
 ## CheckList
 - Logo del menu (Hecho).
 - Diseñar login y registro (Hecho).
-- Añadir ReCaptcha al registro (Hecho).
+- Añadir ReCaptcha al registro.
   - https://es.stackoverflow.com/questions/67156/verificaci%C3%B3n-recaptcha-de-google
   - https://www.google.com/recaptcha/admin#site/343169630?setup
 - Añadir login mediante passportjs
