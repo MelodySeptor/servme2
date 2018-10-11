@@ -1,6 +1,8 @@
 validateCaptcha= function() {
 	var response = grecaptcha.getResponse();
 	if(response.length == 0){
-		alert("Captcha no verificado")
+		window.location.replace("http://www.servme.tk")
+		alert('Error: Captcha no verificado.')
+		//Funciona muy asi asi, se debe revisar xD.
 	}
 }
