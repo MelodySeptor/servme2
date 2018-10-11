@@ -2,7 +2,8 @@
 ## Api's
 - Webslides.
 - Express for NodeJS.
-- PassportJS (No implementado).
+- Crypto.
+- PassportJS (No implementado) (No se usa).
 ## CheckList
 - Logo del menu (Hecho).
 - Diseñar login y registro (Hecho).
@@ -18,6 +19,8 @@
 - Google Search Console (Hecho).
   - Sitemap.xml
 - Añadir login mediante passportjs
+  - Al final se hara con Crypto. Más adelante a lo mejor se varia.
+  - https://lollyrock.com/articles/nodejs-encryption/
 - Registrar usuario correctamente.
 - Logear usuario correctamente.
 - Revisar diseño de imagenes login y registro.
