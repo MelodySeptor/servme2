@@ -1,1 +1,1 @@
-datosIndex={tituloPagina:'', nombrePrincipal:'Servme'}
+datosIndex={tituloPagina:'', nombrePrincipal:'Servme', login=false}
