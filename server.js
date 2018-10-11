@@ -3,6 +3,7 @@ var session = require('express-session')
 var helmet = require('helmet')
 const bodyParser = require("body-parser");
 require('./private/datosVariables')
+require('./private/gestorLoginRegistro/gestorRegistro')
 var app = express()
 
 var expireDate = new Date(Date.now() + 60 * 60 * 1000)
@@ -54,7 +55,7 @@ app.get('/registro', function(req, res){
 
 //Gestion del registro
 app.post('/registroPeticion', function(req, res){
-	res.redirect('./registro')
+	gestorRegistro(req, res)
 })
 
 //Gestion del login
