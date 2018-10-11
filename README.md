@@ -18,12 +18,14 @@
   - Captcha mal redirije a registro otra vez.
 - Google Search Console (Hecho).
   - Sitemap.xml
-- Añadir login mediante passportjs
-  - Al final se hara con Crypto. Más adelante a lo mejor se varia.
-  - https://lollyrock.com/articles/nodejs-encryption/
-- Registrar usuario correctamente.
-- Logear usuario correctamente.
-- Revisar diseño de imagenes login y registro.
+- Gestionar Login/Registro
+  - Añadir login mediante passportjs
+    - Al final se hara con Crypto. Más adelante a lo mejor se varia.
+    - https://lollyrock.com/articles/nodejs-encryption/
+  - Registrar usuario correctamente.
+    - Crear base de datos en https://www.freemysqlhosting.net/register/?action=register
+  - Logear usuario correctamente.
+  - Revisar diseño de imagenes login y registro.
 - Cambiar del menú acceder y registro por nombre del usuario, foto y boton de salir.
 - Pagina de perfil.
 - Añadir Servicio.
