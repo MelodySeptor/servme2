@@ -63,6 +63,14 @@ app.post('/accederPeticion', function(req, res){
 	res.redirect('./acceder')
 })
 
+//Obtiene los terminos y redirije al registro.
+app.get('/terminos', function(req, res){
+	/*
+	https://arjunphp.com/download-file-node-js-express-js/
+	*/
+	res.redirect('./registro')
+})
+
 //Server
 app.listen(port, function(){
 	console.log("Server started on: " + port)
