@@ -24,6 +24,7 @@
     - https://lollyrock.com/articles/nodejs-encryption/
   - Registrar usuario correctamente.
     - Crear base de datos en https://www.freemysqlhosting.net/register/?action=register
+    - Manejar con: https://www.npmjs.com/package/sync-mysql
   - Logear usuario correctamente.
   - Revisar diseño de imagenes login y registro.
 - Cambiar del menú acceder y registro por nombre del usuario, foto y boton de salir.
