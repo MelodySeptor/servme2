@@ -1,3 +1,4 @@
+//Usado en el registro para validar si el captcha es correcto o no (REVISAR).
 validateCaptcha= function() {
 	var response = grecaptcha.getResponse();
 	if(response.length == 0){
