@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(helmet())
 app.set('views', __dirname + '/public/views')
 app.set('view engine', 'pug')
-var port = 80
+var port = 443
 
 //Peticion general
 app.all('/', function(req, res){
