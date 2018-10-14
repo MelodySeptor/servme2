@@ -16,9 +16,13 @@
   - Fotos provisionales correctas.
   - Estilo correcto.
   - Captcha mal redirije a registro otra vez.
+- Establecer un certificado SSL (Hecho).
+  - Obtener un certificado con certbot.
+  - Mediante nginx se hace el reverse-proxy.
 - Google Search Console (Hecho).
   - Sitemap.xml
-- Gestionar Login/Registro
+- Crear un footer con la información de cookies, nombre del creador y mail (Pendiente).
+- Gestionar Login/Registro (En proceso)
   - Añadir login mediante passportjs
     - Al final se hara con Crypto. Más adelante a lo mejor se varia.
     - https://lollyrock.com/articles/nodejs-encryption/
