@@ -19,6 +19,7 @@
 - Establecer un certificado SSL (Hecho).
   - Obtener un certificado con certbot.
   - Mediante nginx se hace el reverse-proxy.
+  - https://code.lengstorf.com/deploy-nodejs-ssl-digitalocean/
 - Google Search Console (Hecho).
   - Sitemap.xml
 - Crear un footer con la información de cookies, nombre del creador y mail (Pendiente).
