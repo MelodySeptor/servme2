@@ -3,6 +3,7 @@
 - Webslides.
 - Express for NodeJS.
 - Crypto.
+- Certbot + nginx (certificado y proxy)
 - PassportJS (No implementado) (No se usa).
 ## CheckList
 - Logo del menu (Hecho).
