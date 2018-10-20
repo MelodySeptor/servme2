@@ -6,45 +6,69 @@ html
 
 	body
 		include ./header.pug
-		article(class="webslides")
-			section(class="bg-black aligncenter slide current")
-				span(class="background dark" style="background-image:url('/images/registro.jpg')")
-				div(class="wrap size-70 align center")
-					h2(class="text-landing") Registro
-					p(class="text-intro") Empieza a solicitar u ofrecer servicios
-					form(class="bg-trans-dark" method="post" onsubmit="validateCaptcha()" action="/registroPeticion" style="border-radius:10px;")
+		//Ñigui Ñogui
+		div(id="index-banner" class="parallax-container")
+			div(class="section no-pad-bot")
+				div(class="container")
+					br
+					br
+					h1(class="header center teal-text text-lighten-2") Registro
+					div(class="row center")
+						h5(class="header col s12 light") Servme: servicios de confianza en casa
+					div(class="row center")
+						h5(class="header col s12 light") Únete para empezar a disfurtar
+					br 
+					br
+			div(class="parallax")
+				img(src="images/index_background1.jpg" alt="Index_Image_Background")
 
-						ul(class="flexblock")
-							li
-								input(tabindex="1" name="nombres" placeholder="Nombre y Apellidos" required="required" type="text")
+		br
+		br
+		div(class="container")
+			div(clas="section")
+				div(class="row")
+					form(class="col s12" method="post" action="/peticionRegistro")
+						div(class="row")
+							div(class="input-field col s6")
+								i(class="material-icons prefix") account_circle
+								input(id="nombreRegistro" name="nombreRegistro" type="text" class="validate" required="required")
+								label(for="nombreRegistro") Nombre
 
-						ul(class="flexblock")
-							li
-								input(tabindex="1" name="email" placeholder="tu@email.com" required="required" type="text")
+							div(class="input-field col s6")
+								input(id="ApellidosRegistro" name="ApellidosRegistro" type="text" class="validate" required="required")
+								label(for="ApellidosRegistro") Apellidos
 
-						ul(class="flexblock")
-							li
-								input(tabindex="1" name="password" placeholder="Contraseña" required="required" type="password")
-							li
-								input(tabindex="2" name="passwordRepeat" placeholder="Repite la Contraseña" required="required" type="password")
+						div(class="row")
+							div(class="input-field col s12")
+								i(class="material-icons prefix") email
+								input(id="emailRegistro" name="emailRegistro" type="email" class="validate" required="required")
+								label(for="emailRegistro") Email
 
-						ul(class="flexblock")
-							li
-								input(tableindex="1" type="radio" id="terminos" name="terminos"  value="Acepto los Términos y condiciones" required="required")
-								| Acepto los Términos y condiciones de uso.
-								a(href="/terminos")
-									p(class="text-context") Leer más.
+						div(class="row")
+							div(class="input-field col s6")
+								i(class="material-icons prefix") lock
+								input(id="passwordRegistro" type="password" class="validate" required="required")
+								label(for="passwordRegistro") Contraseña
 
-							li
+							div(class="input-field col s6")
+								input(id="passwordRepetirRegistro" type="password" class="validate" required="required")
+								label(for="passwordRepetirRegistro") Repite la contraseña
+						div(class="row")
+							div(class="input-field col s12")
+								label
+									input(class="with-gap" name="group1" type="radio" required="required") 
+									span Acepto los términos y condiciones
+						div(class="row")
+							div(class="input-field col s12")
 								div(class="g-recaptcha" data-sitekey="6Lfb2nQUAAAAAIfQzYIn85KoLNj6yBrZv2RP7VdH")
-
-						ul(class="flexblock")
-							li
-								button(class="radius" type="submit" tabindex="2" title="Registro")
-									p Registrame
-
-						a(href="/acceder")
-							p(class="text-context") Ya estoy registrado
-					script
-						include ../scripts/validateCaptcha.js
-			include ./footer.pug
+							
+						div(class="row")
+							div(class="input-field col s6")
+								i(class="material-icons prefix") error_outline
+								label
+									a(href="/acceder") Ya estoy registrado
+							div(class="input-field col s6")
+								button(class="btn waves-effect waves-light" type="submit" name="action") Registrar
+									i(class="material-icons right") chevron_right
+		br
+		include ./footer.pug

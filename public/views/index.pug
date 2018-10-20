@@ -4,18 +4,70 @@ html
 		include ./head.pug
 
 	body
-		
-		article(class="webslides")
-			section(class="bg-black aligncenter slide current")
-				span(class="background dark" style="background-image:url('/images/indexBackground.jpg')")
-				div(class="wrap")
-					
-					h1(class="text-landing")= nombrePrincipal
-					p(class="text-subtitle") Servicios de confianza en casa
-
+		include ./header.pug
+		div(id="index-banner" class="parallax-container")
+			div(class="section no-pad-bot")
+				div(class="container")
 					br
-					div(class="wrap size-30 align center")
-						form(method="get" action="/inicio")
-							button(class="radius" type="submit" title="Acceder")
-								p Empezar
-			include ./footer.pug
+					br
+					h1(class="header center teal-text text-lighten-2") Servme
+					div(class="row center")
+						h5(class="header col s12 light") Servicios de confianza en casa
+					div(class="row center")
+						a(href="/inicio" id="download-button" class="btn-large waves-effect waves-light teal lighten-1") Empezar
+					br 
+					br
+			div(class="parallax")
+				img(src="images/index_background1.jpg" alt="Index_Image_Background")
+
+		div(class="container")
+			div(class="section")
+
+				div(class="row")
+					div(class="col s12 m4")
+						div(class="icon-block")
+							h2(class="center brown-text")
+								i(class="material-icons") flash_on
+							h5(class="center") Rápido
+							p(class="light") Texto diciendo que es rápido.
+
+					div(class="col s12 m4")
+						div(class="icon-block")
+							h2(class="center brown-text")
+								i(class="material-icons") group
+							h5(class="center") Todo tipo de servicios
+							p(class="light") Texto diciendo que hay categorias de servicios y que hay muchas.
+			
+					div(class="col s12 m4")
+						div(class="icon-block")
+							h2(class="center brown-text")
+								i(class="material-icons") settings
+							h5(class="center") Fácil de usar
+							p(class="light") Decir que gracias a bla bla bla es fácil de usar.
+
+		div(class="parallax-container valign-wrapper")
+			div(class="section no-pad-bot")
+				div(class="container")
+					div(class="row center")
+						h5(class="header col s12 light") Frase aquí
+			div(class="parallax")
+				img(src="images/index_background2.jpg" alt="Index Background Image 2")
+				
+		div(class="container")
+			div(class="section")
+				div(class="row")
+					div(class="col s12 center")
+						h3
+							i(class="mdi-content-send brown-text")
+						h4 Título aquí
+						p(class="left-align light") Explicación aquí.
+
+		div(class="parallax-container valign-wrapper")
+			div(class="section no-pad-bot")
+				div(class="container")
+					div(class="row center")
+						h5(class="header col s12 light") Frase aquí
+			div(class="parallax")
+				img(src="images/index_background3.jpg" alt="Index Background Image 3")
+		
+		include ./footer.pug
