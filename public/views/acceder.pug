@@ -5,7 +5,6 @@ html
 
 	body
 		include ./header.pug
-
 		article(class="webslides")
 			section(class="bg-black aligncenter slide current")
 				span(class="background dark" style="background-image:url('/images/login.jpg')")
@@ -22,7 +21,10 @@ html
 							li
 								button(class="radius" type="submit" tabindex="3" title="Acceder")
 									p Acceder
-					
-						a(href="/registro")
-							p(class="text-context") Crear nuevo usuario
+						div(class="wrap")
+							p(class="text-context")
+								a(href="/registro")
+									p(class="alignleft") Crear nuevo usuario
+								a(href="/recuperaPass")
+									p(class="alignright") He olvidado la contraseña.
 			include ./footer.pug
