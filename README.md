@@ -24,7 +24,8 @@
   - https://code.lengstorf.com/deploy-nodejs-ssl-digitalocean/
 - Google Search Console (Hecho).
   - Sitemap.xml
-- Crear un footer con la información de cookies, nombre del creador y mail (Pendiente).
+- Crear un footer con la información de nombre del creador y mail (Hecho).
+- Añadir acepto las cookies.
 - Gestionar Login/Registro (En proceso)
   - Añadir login mediante passportjs
     - Al final se hara con Crypto. Más adelante a lo mejor se varia.
