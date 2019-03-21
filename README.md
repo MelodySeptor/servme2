@@ -1,4 +1,4 @@
-# Servme.es (Proyecto cancelado por motivos personales)
+# Servme.es (Proyecto pausado)
 ## Api's
 - Materialize.
   - https://materializecss.com
