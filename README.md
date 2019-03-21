@@ -25,14 +25,14 @@
 - Google Search Console (Hecho).
   - Sitemap.xml
 - Crear un footer con la información de nombre del creador y mail (Hecho).
-- Añadir acepto las cookies.
+- Añadir acepto las cookies (Hecho).
 - Gestionar Login/Registro (En proceso)
   - Añadir login mediante passportjs
-    - Al final se hara con Crypto. Más adelante a lo mejor se varia.
+    - Al final se hara con Crypto. Más adelante se varia pero así se pueden ir probando cosas.
     - https://lollyrock.com/articles/nodejs-encryption/
   - Registrar usuario correctamente.
     - Crear base de datos en https://www.freemysqlhosting.net/register/?action=register
-    - Manejar con: https://www.npmjs.com/package/sync-mysql
+    - Manejar con: @TODO
   - Logear usuario correctamente.
   - Revisar diseño de imagenes login y registro.
 - Cambiar del menú acceder y registro por nombre del usuario, foto y boton de salir.
